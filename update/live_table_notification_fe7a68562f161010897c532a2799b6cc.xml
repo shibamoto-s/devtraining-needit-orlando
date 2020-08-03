@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="774190f01f1310005a3637b8ec8b70ef" table="live_table_notification">
+    <live_table_notification action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <before_script><![CDATA[/**
+  * Optional script to set variables or cancel notification
+  * global variables
+  *      current is the current GlideRecord object
+  *      changedFields is an ArrayList of fields changed on submit, use changedFields.contains('fieldname') to check for change
+  *      set answer = false to cancel the notification
+  *      set profileSource to a GlideRecord to define the profile that is posting the message
+  *      set profileID to a live_profile sys_id to define the profile that is posting the message, by default it is the current record. Overrides profileSource if specified.
+  *      set any variable name and access the value in the message by using ${myVariableName}
+  */]]></before_script>
+        <condition/>
+        <description/>
+        <document_groups/>
+        <feed_group display_value="grp_xg_livefeed">dc796c162f161010897c532a2799b6fb</feed_group>
+        <message><![CDATA[Needit Taskレコードが作成されました。
+
+番号: ${number}
+Sys ID: ${sys_id}
+ステータス: ${state}
+タスクタイプ: ${sys_class_name}
+作成日時: ${sys_created_on}
+]]></message>
+        <post_feed>true</post_feed>
+        <post_rooms>true</post_rooms>
+        <sys_class_name>live_table_notification</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-31 06:22:49</sys_created_on>
+        <sys_domain>774190f01f1310005a3637b8ec8b70ef</sys_domain>
+        <sys_domain_path>!!!/</sys_domain_path>
+        <sys_id>fe7a68562f161010897c532a2799b6cc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides display_value="">cde8a4162f161010897c532a2799b674</sys_overrides>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>live_table_notification_fe7a68562f161010897c532a2799b6cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-31 07:00:08</sys_updated_on>
+        <table>x_58872_needit_needit_task</table>
+    </live_table_notification>
+</record_update>
